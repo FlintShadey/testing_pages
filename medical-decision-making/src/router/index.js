@@ -1,5 +1,5 @@
-// router/index.js
-import { createRouter, createWebHistory } from "vue-router";
+// src/router/index.js
+import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 
@@ -9,7 +9,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/testing_pages/'), // Ensure base path
+  history: createWebHashHistory(),
   routes,
 });
 
