@@ -1,18 +1,21 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import condition1 from '../views/conditions/condition1.vue';
-import condition2 from '../views/conditions/condition2.vue';
-import condition3 from '../views/conditions/condition3.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
 
+import Concussion from "../views/conditions/Concussion.vue";
+import About from "../views/About.vue";
+import HeadInjury from "../views/conditions/HeadInjury.vue";
+import HeadInjuryNoCT from "../views/conditions/HeadInjuryNoCT.vue";
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/condition1', name: 'Condition1', component: condition1 },
-  { path: '/condition2', name: 'Condition2', component: condition2 },
-  { path: '/condition3', name: 'Condition3', component: condition3 },
+  { path: "/", name: "Home", component: Home },
+
+  { path: "/concussion", name: "Concussion", component: Concussion},
+  { path: "/about", component: About },
+  { path: "/head-injury", component: HeadInjury },
+  { path: "/head-injury-no-ct", component: HeadInjuryNoCT },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

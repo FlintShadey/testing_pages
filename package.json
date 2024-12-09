@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "vite-plugin-vuetify": "^2.0.4",
+    "vuetify": "^3.7.0-beta.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "vite": "^6.0.3"
+  }
+}

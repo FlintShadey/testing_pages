@@ -1,22 +1,24 @@
 {
   "name": "medical-decision-making",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@mdi/font": "^7.4.47",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0",
+    "vuetify": "^3.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "gh-pages": "^6.2.0",
-    "vite": "^6.0.1"
-  },
-  "homepage": "https://flintshadey.github.io/testing_pages"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^7.32.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.1",
+    "vite": "^4.0.0"
+  }
 }
